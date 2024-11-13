@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+        width: 200px;
+      }
+
+      .card-title {
+        font-weight: bold;
+      }
+
+      .card-body {
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <html>
+    <body>
+      <!-- 버튼을 누르면 숫자가 1 증가하는 기능을 구현하시오 -->
+      <div class="container">
+        <div id="divTag">0</div>
+        <button>버튼</button>
+      </div>
+      <script>
+        const button = document.querySelector('#button');
+        const divTag = document.querySelector('divTag');
+
+        button.addEventListener('click', () => {});
+      </script>
+
+      <!-- 색상을 입력하면 텍스트의 색이 변하는 기능을 구현하시오. -->
+      <div class="container">
+        <h1>what color am I</h1>
+        <input type="text" id="'inputTag" />
+      </div>
+      <script>
+        const inputTag = document.querySelector('#inputTag');
+        const textTag = document.querySelector('text');
+
+        inputTag.addEventListener('input', (e) => {
+          const target = e.target;
+          const value = target.value;
+          console.log(value);
+        });
+      </script>
+    </body>
+  </html>
+</html>

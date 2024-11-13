@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="div-tag">
+      div의 텍스트
+      <div>
+        div 안 div의 텍스트
+        <div>div 안 div 안 div의 텍스트</div>
+      </div>
+    </div>
+    <script>
+      const divTag = document.querySelector('#div-tag');
+      console.log(divTag.textContent);
+      // div의 텍스트
+      // div 안 div의 텍스트
+      // div 안 div 안 div의 텍스트
+
+      divTag.textContent = '텍스트 수정';
+    </script>
+  </body>
+</html>

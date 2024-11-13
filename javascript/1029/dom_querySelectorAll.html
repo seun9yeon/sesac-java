@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="container"> <!-- 컨테이너 div로 두 개의 문단을 포함 -->
+      <p id="first">첫 번째 문단</p> <!-- 첫번째 문단: ID가 'first'인 요소 -->
+      <p class="second">두 번째 문단</p> <!-- 두번째 문단: 클래스가 'second'인 요소 -->
+    </div>
+    <script>
+    //  문서에서 모든 <p>태그를 선택하여 NodeList로 저장
+      const paragraphs = document.querySelectorAll('p'); 
+      
+    // 선택한 각 문단에 대해 반복하면서 
+      paragraphs.forEach((p, index) => {
+        //  현재 문단(P)의 텍스트 내용을 출력
+        // index는 0부터 시작하므로, 문단 번호는 index + 1로 출력
+        console.log(`문단 ${index + 1}: ${p.textContent}`);
+      });
+      //  위 코드는 다음과 같은 결과를  콘솔에 출력합니다:
+      // 문단 1: 첫 번째 문단
+      // 문단 2: 두 번째 문단
+    </script>
+  </body>
+</html>

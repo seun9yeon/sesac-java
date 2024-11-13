@@ -1,0 +1,64 @@
+.green-box {
+  width: 700px;
+  height: 30px;
+  background-color: green;
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+
+.green-box2 {
+  width: 700px;
+  height: 70px;
+  background-color: green;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+
+.bisque-box {
+  width: 700px;
+  height: 70px;
+  background-color: bisque;
+  padding: 1rem;
+}
+
+.green-box3 {
+  width: 700px;
+  height: 70px;
+  background-color: green;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.green-box4 {
+  width: 700px;
+  height: 30px;
+  background-color: green;
+  margin: 20px 20px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+main {
+  width: 700px;
+  display: block;
+  margin: auto;
+}
+
+.card-body-content > h2 {
+  margin-top: 30px;
+}
+

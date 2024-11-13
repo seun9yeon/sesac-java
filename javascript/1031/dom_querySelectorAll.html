@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contaniner"></div>
+    <p id="first">첫 번째 문단</p>
+    <p class="second">두 번째 문단</p>
+    </div>
+    <script>
+      const Paragraphs = document.querySelectorAll('p');
+      paragraphs.forEach((p, index) => {
+        console.log('문단 ${index + }: ${p.textContent}');
+      });
+      // 문단 1: 첫 번째 문단
+      // 문단 2: 두 번째 문단
+    </script>
+  </body>
+</html>

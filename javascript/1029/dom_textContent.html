@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- 페이지의 제목을 나타내는 h1 요소 -->
+    <!-- 초기 텍스트: '원래 제목' -->
+    <h1>원래 제목</h1>
+    <script>
+      // 문서에서 첫 번째 <h1> 요소를 선택하여 heading 변수에 저장
+      const heading = document.querySelector('h1');
+
+      // 선택한 h1 요소의 텍스트내용을 콘솔에 출력
+      // 결과: '원래 제목'
+      console.log(heading.textContent); // 원래 제목
+
+      // 변경된 h1 요소의 텍스트내용을 콘솔에 출력
+      //  결과: '새로운 제목'
+      heading.textContent = '새로운 제목';
+      console.log(heading.textContent); // 새로운 제목
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="first">첫 번째 문단</p>
+      <p class="second">두 번째 문단</p>
+    </div>
+    <script>
+      const firstParagraph = document.querySelector('#first');
+      console.log(firstParagraph.textContent);
+
+      const secondParagraph = document.querySelector('.second');
+      console.log(secondParagraph.textContent);
+    </script>
+  </body>
+</html>

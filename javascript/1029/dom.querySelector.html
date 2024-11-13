@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- 'container' 클래스를 가진 div로 두 개의 문단을 포함 -->
+    <div class="container">
+      <!-- 첫 번째 문단: ID가 'frist'인 요소 -->
+      <p id="first">첫 번째 문단</p>
+      <!-- 두 번째 문단: 클래스가 'second'인 요소 -->
+      <p class="second">두 번째 문단</p>
+    </div>
+    <script>
+      //  ID가 'first'인 문단 요소를 선택하여 firstParagraph 변수에 저장
+      const firstParagraph = document.querySelector('#first');
+
+      // firstParagralph의 텍스트 내용을 콘솔에 출력
+      //  결과: '첫번째 문단'
+      console.log(firstParagraph.textContent); // 첫 번째 문단
+
+      // 클래스가 'second'인 문단 요소를 선택하여 secondParagrph
+      const secondParagraph = document.querySelector('.second');
+
+      // secondParagragh의 텍스트 내용을 콘솔에 출력
+      // 결과 : '두 번째 문단'
+      console.log(secondParagraph.textContent); // 두 번째 문단
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .font {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 글씨를 "hello dom"으로 변경하시오 -->
+    <div id="text">Hello World!</div>
+
+    <!-- background-color를 red로, height, width를 100px로 변경하시오 -->
+    <div id="box">Hello World!</div>
+
+    <!-- 글씨 크기를 3rem으로 바꾸시오 -->
+    <div>글씨</div>
+
+    <!-- li태그들의 font 크기를 3rem으로 바꾸시오 -->
+    <ul>
+      <li class="list">hello</li>
+      <li class="list">world</li>
+      <li class="list">css</li>
+      <li class="list">javascript</li>
+    </ul>
+    <script>
+      // id = text 요소를 선택
+      const textTag = document.querySelector('#text');
+      textTag.textContent = 'hello dom';
+
+      // setTimeout(() => {
+      //   const texTag = document.querySelector('text');
+      //   texTag.textContent = 'hello sesac';
+      // }, 1000);
+
+      const texTag = document.querySelector('#text');
+      texTag.textContent = 'hello dom';
+
+      // <!-- background-color를 red로, height, width를 100px로 변경하시오 -->
+      const boxTag = document.querySelector('#box');
+      boxTag.style.backgroundColor = 'red';
+      boxTag.style.width = '100px';
+      boxTag.style.height = '100px';
+
+      const styleobject = {
+        backgroundColor: 'red',
+        width: '100px',
+      };
+
+      for (let el in styleObject) {
+        constvalue = stuleobject[el];
+        boxTag.style[el] = value;
+      }
+      // <!-- 글씨 크기를 3rem으로 바꾸시오 -->
+      const sizeTag = document.querySelector('#');
+      sizeTag.classList.add('front');
+
+      // <!-- li태그들의 font 크기를 3rem으로 바꾸시오 -->
+      const liTags = document.querySelectorAll('.list');
+      console.log(liTags);
+      liTag.forEach((liTag) => {
+        liTag.classList.add('font');
+      });
+    </script>
+  </body>
+</html>
